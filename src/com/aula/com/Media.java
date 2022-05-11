@@ -33,8 +33,10 @@ public class Media {
 		media = (nota1 + nota2 + nota3 + nota4)/ 4;
 		
 		if(media <5) {
+			System.out.println("Situação do aluno");
 			System.out.println("Aluno Reprovado ");
 		}else if(media == 5){
+			System.out.println("Situação do aluno");
 			System.out.println("Aluno Recuperação");
 		}
 		else {
