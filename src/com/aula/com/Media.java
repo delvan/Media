@@ -5,10 +5,15 @@ import java.util.Scanner;
 public class Media {
 
 	public static void main(String[] args) {
-		int nota1, nota2, nota3, nota4, media;
+		
+		String nomeAluno;
+		double nota1, nota2, nota3, nota4, media;
 		
 		Scanner teclado = new Scanner(System.in);
 		
+		
+		System.out.println("Digite a nome aluno: ");
+		nomeAluno = teclado.next();
 		
 		System.out.println("Digite a nota 1: ");
 		nota1 = teclado.nextInt();
@@ -26,7 +31,11 @@ public class Media {
 		media = (nota1 + nota2 + nota3 + nota4)/ 4;
 		
 		System.out.println("Resultado");
-		System.out.println("A media do aluno: "+ media);
+		System.out.println("Nota 1 "+ nota1);
+		System.out.println("Nota 2 "+ nota2);
+		System.out.println("Nota 3 "+ nota3);
+		System.out.println("Nota 4 "+ nota4);
+		System.out.println("Aluno: "+ nomeAluno +" Com media final: "+ media);
 		
 		
 
